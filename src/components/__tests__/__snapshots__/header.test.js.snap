@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders and matches snapshot 1`] = `
+<div
+  className="header"
+>
+  <h1>
+    Crazy Cards
+  </h1>
+  <p>
+    Fill in your details to see which cards you are eligble for
+  </p>
+</div>
+`;

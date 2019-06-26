@@ -1,0 +1,45 @@
+@import 'global_variables';
+
+.card {
+  font-family: $font-family;
+  border: 1px solid #cccccc;
+  margin: 10px 0;
+  padding: 5px 20px;
+  border-radius: 3px;
+  text-align: left;
+
+  &--selected {
+    background: linear-gradient(69deg, #ec6f66, #f3a183);
+    color: #ffffff;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    margin: 10px 0;
+  }
+
+  &__header-detail {
+    margin: 10px 0;
+    width: 50%;
+    text-align: right;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      margin: 5px 0;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 50%;
+    margin: 10px auto;
+  }
+}

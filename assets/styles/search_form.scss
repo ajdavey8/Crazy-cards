@@ -1,0 +1,94 @@
+@import 'global_variables';
+
+.search-form {
+  font-family: $font-family;
+  margin: auto 1%;
+  background: linear-gradient(69deg, #2193b0, #6dd5ed);
+  border-radius: 3px;
+  color: #ffffff;
+  padding: 20px;
+
+  &__group {
+    margin: 12px 0;
+  }
+
+  &__label {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  &__input-wrapper {
+    margin-top: 5px;
+  }
+
+  &__text-input {
+    margin: 5px 5px 5px 0;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    padding: 8px;
+  }
+
+  &__input-month {
+    width: 21px;
+  }
+
+  &__radio-wrapper {
+    display: flex;
+    flex: 0 0 auto;
+    margin-top: 5px;
+  }
+
+  &__radio {
+    display: flex;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    text-align: center;
+    width: 100%;
+    flex: 1 1 auto;
+  }
+
+  &__radio-label {
+    padding: 5px 0;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  &__radio-input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+  &__radio-label:hover {
+    background-color: #cccccc;
+  }
+
+  &__button {
+    padding: 8px;
+    border: none;
+    font-size: $font-size-normal;
+    border-radius: 3px;
+    color: #ffffff;
+    background-color: #c0392b;
+  }
+}
+
+input[type='radio']:checked ~ .search-form__radio-label {
+  background-color: #2980b9;
+  color: #ffffff;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+@media (min-width: 768px) {
+  .search-form__radio-wrapper {
+    width: 50%;
+  }
+}

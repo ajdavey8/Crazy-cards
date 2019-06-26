@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card renders and matches snapshot 1`] = `
+<div
+  className="card card--selected"
+  onClick={[Function]}
+>
+  <div
+    className="card__header"
+  >
+    <h3
+      className="card__heading"
+    >
+      Anywhere Card
+    </h3>
+    <p
+      className="card__header-detail"
+    >
+      Credit Available: £
+      300
+    </p>
+  </div>
+  <div
+    className="card__details"
+  >
+    <p>
+      Apr: 
+      33.9
+      %
+    </p>
+    <p>
+      Balance Transfer Duration: 
+      0
+    </p>
+    <p>
+      Purchase Offer Duration: 
+      0
+    </p>
+  </div>
+</div>
+`;
